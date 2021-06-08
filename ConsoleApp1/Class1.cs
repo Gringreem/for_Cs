@@ -8,14 +8,31 @@ public class Solution
 {
     public string solution(string s)
     {
-        string[] answer = new string[s.Length];
+        string answer = "";
+        string answe = "";
 
-        for(int i = 0; i<s.Length; i++)
+        string[] ss = s.Split(" ");
+
+        for(int i=0; i < ss.Length; i++)
         {
-            answer[i] = s[i];
+            for(int j = 0; j<ss[i].Length; j++)
+            {
+                if (j % 2 == 0)
+                {
+                    answe += Char.ToUpper(ss[i][j]);
+                }
+                else
+                {
+                    answe += ss[i][j];
+                }
+            }
+            answe += " ";
+        }
+        for(int i =0; i<s.Length; i++)
+        {
+            answer += answe[i];
         }
 
-
-        return answer.ToString();
+        return answer;
     }
 }
