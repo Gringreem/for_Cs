@@ -2,3 +2,15 @@ C:\Users\jhs1v\source\repos\Gringreem\for_Cs\ConsoleApp1\obj\Debug\net5.0\Progra
 C:\Users\jhs1v\source\repos\Gringreem\for_Cs\ConsoleApp1\obj\Debug\net5.0\Programmers_coding.AssemblyInfoInputs.cache
 C:\Users\jhs1v\source\repos\Gringreem\for_Cs\ConsoleApp1\obj\Debug\net5.0\Programmers_coding.AssemblyInfo.cs
 C:\Users\jhs1v\source\repos\Gringreem\for_Cs\ConsoleApp1\obj\Debug\net5.0\Programmers_coding.csproj.CoreCompileInputs.cache
+C:\Users\jhs1v\source\repos\Gringreem\for_Cs\ConsoleApp1\bin\Debug\net5.0\Programmers_coding.exe
+C:\Users\jhs1v\source\repos\Gringreem\for_Cs\ConsoleApp1\bin\Debug\net5.0\Programmers_coding.deps.json
+C:\Users\jhs1v\source\repos\Gringreem\for_Cs\ConsoleApp1\bin\Debug\net5.0\Programmers_coding.runtimeconfig.json
+C:\Users\jhs1v\source\repos\Gringreem\for_Cs\ConsoleApp1\bin\Debug\net5.0\Programmers_coding.runtimeconfig.dev.json
+C:\Users\jhs1v\source\repos\Gringreem\for_Cs\ConsoleApp1\bin\Debug\net5.0\Programmers_coding.dll
+C:\Users\jhs1v\source\repos\Gringreem\for_Cs\ConsoleApp1\bin\Debug\net5.0\ref\Programmers_coding.dll
+C:\Users\jhs1v\source\repos\Gringreem\for_Cs\ConsoleApp1\bin\Debug\net5.0\Programmers_coding.pdb
+C:\Users\jhs1v\source\repos\Gringreem\for_Cs\ConsoleApp1\obj\Debug\net5.0\Programmers_coding.csproj.AssemblyReference.cache
+C:\Users\jhs1v\source\repos\Gringreem\for_Cs\ConsoleApp1\obj\Debug\net5.0\Programmers_coding.dll
+C:\Users\jhs1v\source\repos\Gringreem\for_Cs\ConsoleApp1\obj\Debug\net5.0\ref\Programmers_coding.dll
+C:\Users\jhs1v\source\repos\Gringreem\for_Cs\ConsoleApp1\obj\Debug\net5.0\Programmers_coding.pdb
+C:\Users\jhs1v\source\repos\Gringreem\for_Cs\ConsoleApp1\obj\Debug\net5.0\Programmers_coding.genruntimeconfig.cache
