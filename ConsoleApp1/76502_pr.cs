@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public class Solution
+public class Solution_76502
 {
     public int solution(string s)
     {
