@@ -3,26 +3,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 public class Solution
 {
-    public int[,] solution(int[,] arr1, int[,] arr2)
+    public int solution(int n, int[,] edge)
     {
-        int[,] answer = new int[arr1.GetLength(0), arr2.GetLength(1)];
-
-        for(int i =0; i < arr1.GetLength(0); i++)
+        int[] distance = new int[n + 1];
+        bool[,] map = new bool[n + 1, n + 1];
+        for(int i = 0; i < edge.Length; i++)
         {
-            for(int j = 0; j < arr1.GetLength(1); j++)
+            map[edge[i, 0], edge[i, 1]] = map[edge[i, 1], edge[i, 0]] = true;
+        }
+
+        LinkedList<int> nodes = new LinkedList<int>();
+        nodes.AddLast(1);
+
+        int max = 0;
+        while (nodes.Count != 0)
+        {
+            int i = nodes.Last();
+
+            for(int j = 2; j <= n; j++)
             {
-                int sum = 0;
-                for(int k = 0; k < arr2.GetLength(0); k++)
+                if(distance[j] == 0 && map[i, j])
                 {
-                    sum += arr1[i,j] * arr2[j,k];
+                    distance[j] = distance[i] + 1;
+                    nodes.AddLast(j);
+                    max = Math.Max(max, distance[j]);
                 }
-                answer[i, j] = sum;
             }
         }
 
+        int answer = 0;
+        foreach(int d in distance)
+        {
+            if (max == d) answer++;
+        }
 
         return answer;
     }
