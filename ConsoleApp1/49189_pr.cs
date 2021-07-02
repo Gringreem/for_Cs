@@ -5,29 +5,33 @@ using System.Text;
 using System.Threading.Tasks;
 public class Solution
 {
-    public int solution(int n, int[,] edge)
+    public int solution_49189(int n, int[,] edge)
     {
         int[] distance = new int[n + 1];
         bool[,] map = new bool[n + 1, n + 1];
-        for(int i = 0; i < edge.Length; i++)
+
+        for(int i = 0; i < edge.GetLength(0); i++)
         {
             map[edge[i, 0], edge[i, 1]] = map[edge[i, 1], edge[i, 0]] = true;
         }
 
-        LinkedList<int> nodes = new LinkedList<int>();
-        nodes.AddLast(1);
+        List<int> nodes = new List<int>();
+        nodes.Add(1);
+
+        int top = 0;
 
         int max = 0;
-        while (nodes.Count != 0)
+        while (top>=0)
         {
-            int i = nodes.Last();
+            int i = nodes[top--];
 
             for(int j = 2; j <= n; j++)
             {
                 if(distance[j] == 0 && map[i, j])
                 {
                     distance[j] = distance[i] + 1;
-                    nodes.AddLast(j);
+                    nodes.Add(j);
+                    top++;
                     max = Math.Max(max, distance[j]);
                 }
             }
