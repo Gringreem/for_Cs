@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-public class Solution
+public class Solution_49189
 {
-    public int solution_49189(int n, int[,] edge)
+    public int solution(int n, int[,] edge)
     {
         int[] distance = new int[n + 1];
         bool[,] map = new bool[n + 1, n + 1];
