@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-public class Solution
+public class Solution_68645
 {
     public int[] solution(int n)
     {
